@@ -1,0 +1,14 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(to right, #373B44, #4286f4);
+    font-family: 'Staatliches', cursive;
+}
+
+#container-game{    
+    /* background-color: #7f7fd5; */
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    border-radius: 10px;
+}
