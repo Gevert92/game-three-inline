@@ -2,8 +2,10 @@
 
 //Importaciones npm
 const mongoose = require('mongoose');
+const moment = require('moment');
 
-//Variables globales
+//Variables globales//Instanciar
+const now = moment();
 const schema = mongoose.Schema;
 
 /* Esquema del modelo game
@@ -47,7 +49,7 @@ const GameSchema = schema({
     },
     start_time: { 
         type: String,
-        default: Date.now()
+        default: now.format('Y-M-D h:m:s')
     },
     end_time: { 
         type: String,
@@ -55,7 +57,7 @@ const GameSchema = schema({
     },
     updated_at: { 
         type: String,
-        default: Date.now()
+        default: now.format('Y-M-D h:m:s')
     }
 });
 
