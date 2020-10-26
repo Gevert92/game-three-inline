@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Servicio del juego three inline",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "Gevert Rico",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

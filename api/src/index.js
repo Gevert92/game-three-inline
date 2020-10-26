@@ -1,0 +1,1 @@
+console.log('Servicio del juego three inline');
