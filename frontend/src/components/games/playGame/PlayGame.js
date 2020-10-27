@@ -14,12 +14,14 @@ const PlayGame = ( {idGame, saveIdGame, marcaStartGame, saveMarcaStartGame} ) =>
     //Variables states
     const [game, saveGame] = useState(false);
     const [buttonFinishGame, saveButtonFinishGame] = useState(false);
+    const [winnerLine, saveWinnerLine] = useState([]);
 
     //Petición de traer data de una partida existente o de crear una nueva
     useEffect( () =>{
         if( idGame ){    
             clientAxios.get(`/api/game/${idGame}`)
                 .then((response) => {
+                    saveWinnerLine([]);
                     saveGame(response.data);
                 })
                 .catch((error) => {
@@ -33,6 +35,7 @@ const PlayGame = ( {idGame, saveIdGame, marcaStartGame, saveMarcaStartGame} ) =>
 
     //Función para crear nuevo juego
     const newGame = (brandTurn) => {
+        saveWinnerLine([]);
         clientAxios.post(`/api/create`,
                 {
                     brandTurn: brandTurn
@@ -47,11 +50,13 @@ const PlayGame = ( {idGame, saveIdGame, marcaStartGame, saveMarcaStartGame} ) =>
     }
 
     let componentGame;
-    if( game.code==1 ){
+    if( game.code===1 ){
         componentGame = <Game 
                             game={game.data}
                             saveGame={saveGame}
                             saveButtonFinishGame={saveButtonFinishGame}
+                            winnerLine={winnerLine}
+                            saveWinnerLine={saveWinnerLine}
                         />
     }else{
         componentGame = <Message 

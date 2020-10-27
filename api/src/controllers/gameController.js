@@ -31,7 +31,7 @@ async function getGames(req, res){
 
     //Extración de la data
     try {
-        const findResponse = await gameModel.find({});
+        const findResponse = await gameModel.find({}).sort({_id: -1});
         
         //Valores de respuesta
         response.message = 'Se han obtenido las partidas de forma exitosa';
@@ -246,6 +246,7 @@ async function registerMove(req, res){
         if( winnerResponse.winner ){
             dataUpdate.brand_winner = winnerResponse.brand;
             dataUpdate.end_time = now.format('Y-M-D h:m:s');
+            response.winnerLines = winnerResponse.lines;
 
         }else if(winnerResponse.tie){
             dataUpdate.tie = true;

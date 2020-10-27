@@ -65,3 +65,8 @@ table td:hover{
 .btn-x-play{
     margin-right: 7rem;
 }
+
+.fijo{
+    background-color: #4284f0;
+    color: white;
+}
