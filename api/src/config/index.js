@@ -51,7 +51,14 @@ const config = {
      */
     domain: {
         baseUrl: process.env.URL_BASE
-    }
+    },
+
+    /**
+    * Lista blanca para el cors
+    */
+    whiteList: [
+        'http://localhost:3000'
+    ]
 };
 
 module.exports = config;

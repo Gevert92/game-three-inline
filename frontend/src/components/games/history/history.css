@@ -1,0 +1,31 @@
+#btn-history{
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+#table-history{
+    font-size: 1.5rem;
+}
+
+#table-history button{
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+#modalHeader{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#modalBody{
+    text-align: center;
+}
+
+#modalBody button{
+    width: 5rem;
+}
+
+#modalBody .btn-x{
+    margin-right: 7rem;
+}

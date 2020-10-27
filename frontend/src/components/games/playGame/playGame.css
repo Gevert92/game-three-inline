@@ -1,0 +1,67 @@
+#btn-back{
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.tittle-game-play{
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: #17a2b8;
+    padding: 8px;
+    color: white;
+}
+
+#marca{
+    color: white;
+}
+
+table {
+    font-family: 'Staatliches';
+    margin: auto;
+    font-size: 6rem;
+}
+
+table #A2{
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+}
+
+table #B2{
+    border: 2px black solid;
+}
+
+table #C2{
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+}
+
+table #B1{
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+table #B3{
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+table td{
+    padding: 0px 25px;
+    table-layout: fixed;
+    text-align: center;
+}
+
+table td:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #4284f0;
+}
+
+#btn-new-game{
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.btn-x-play{
+    margin-right: 7rem;
+}
