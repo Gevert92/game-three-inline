@@ -1,14 +1,14 @@
 # game-three-inline
 Famoso juego de tres en línea o como muchos lo llaman, la vieja.
 
-## Content
+## Contenido
 Este proyecto separa el backend del frontend, donde el backend esta en la carpeta "api" y escrito en Node.js, mientras que el frontend se encuentra en la carpeta "frontend" y usa el Framework React. Toda información se guarda en la base de datos MongoDB.
 
 Usa tecnologías/librerías como Express, Mongoose, Cors, Moment, dotenv, axios, reactstrap.
 
 ## Instalación
 Se debe tener instalado Node.js, GIT y la base de datos MongoDB sin Autenticación, despues seguir los pasos:
-1. git clone git clone https://github.com/Gevert92/game-three-inline.git app
+1. git clone https://github.com/Gevert92/game-three-inline.git app
 2. cd app/api
 3. npm install
 4. npm start
